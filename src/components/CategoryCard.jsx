@@ -1,7 +1,6 @@
-const CategoryCard = ({ name, image, onClick }) => {
+const CategoryCard = ({ name, image, }) => {
   return (
     <div
-      onClick={onClick}
       className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer"
     >
       <div className="h-40 overflow-hidden">

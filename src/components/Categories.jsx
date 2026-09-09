@@ -1,4 +1,5 @@
 import CategoryCard from "./CategoryCard";
+import { Link } from "react-router-dom";
 
 const categories = [
   {
@@ -50,7 +51,7 @@ const categories = [
   },
 ];
 
-const Categories = ({ onCategoryClick }) => {
+const Categories = () => {
   return (
     <section
       id="categories"
@@ -86,13 +87,16 @@ const Categories = ({ onCategoryClick }) => {
 
         {categories.map((category) => (
 
-          <CategoryCard
-            key={category.name}
-            name={category.name}
-            image={category.image}
-            onClick={() => onCategoryClick(category.name)}
-          />
+          <Link key={category.name} to={`/category/${category.name}`}>
 
+
+
+
+            <CategoryCard
+              name={category.name}
+              image={category.image}
+            />
+          </Link>
         ))}
 
       </div>

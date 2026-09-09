@@ -6,11 +6,11 @@ import Footer from "../../components/Footer";
 
 
 
-const Home = ({onCategoryClick}) => {
+const Home = ({}) => {
   return (
     <main>
       <OfferCarousel />
-      <Categories  onCategoryClick={onCategoryClick}  />
+      <Categories  />
       <ProductSection />
       <PaymentMethods/>
       <Footer/>
